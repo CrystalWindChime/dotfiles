@@ -1,0 +1,11 @@
+[pyprland]
+plugins = [
+  "scratchpads"
+]
+
+[scratchpads.email]
+animation = "fromTop"
+command = "ELECTRON_OZONE_PLATFORM_HINT=wayland proton-mail"
+class = "Proton Mail"
+lazy = true
+size = "95% 85%"
