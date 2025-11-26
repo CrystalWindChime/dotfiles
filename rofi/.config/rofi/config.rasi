@@ -1,0 +1,17 @@
+configuration {
+  modi: "drun,run";
+  font: "Inter 12";
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+//@theme 'minimal-dark'
+
+@theme "/usr/share/rofi/themes/android_notification.rasi"

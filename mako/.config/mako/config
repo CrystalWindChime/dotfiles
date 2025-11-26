@@ -1,0 +1,19 @@
+# Appearance
+background-color=#424242bb
+text-color=#ffffff
+border-color=#ffffff
+border-size=1
+border-radius=4
+padding=10
+margin=10
+font=Inter 12
+
+# Behaviour
+default-timeout=5000
+max-visible=3
+anchor=top-right
+width=300
+height=100
+icons=true
+icon-path=/usr/share/icons
+layer=overlay

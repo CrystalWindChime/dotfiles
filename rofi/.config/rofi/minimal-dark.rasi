@@ -1,0 +1,57 @@
+* {
+    background:        #0f0f0f;
+    background-alt:    #161616;
+    foreground:        #e5e5e5;
+    border-color:      #2a2a2a;
+    selected:          #1f1f1f;
+    accent:            #5e81ac;   /* subtle blue highlight, change to match your palette */
+
+    border-radius:     8px;
+    padding:           6px;
+}
+
+window {
+    width: 40%;
+    border: 2px;
+    border-color: @border-color;
+    background-color: @background;
+}
+
+mainbox {
+    padding: 10px;
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @background-alt;
+    /* border: 1px solid @border-color;*/
+    border-radius: @border-radius;
+    padding: 8px;
+}
+
+entry {
+    background-color: transparent;
+    foreground: @foreground;
+    placeholder: "Search…";
+}
+
+listview {
+    background-color: transparent;
+    lines: 10;
+    spacing: 4px;
+}
+
+element {
+    background-color: transparent;
+    padding: 6px 8px;
+    border-radius: @border-radius;
+}
+
+element selected {
+    background-color: @selected;
+    foreground: @foreground;
+}
+
+element-icon {
+    size: 1em;
+}
