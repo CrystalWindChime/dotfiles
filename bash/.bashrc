@@ -42,6 +42,8 @@ cheat() {
   curl "https://cheat.sh/$1"
 }
 
+source ~/.config/my-environment.sh
+
 export LANG=en_GB.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
