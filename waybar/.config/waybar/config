@@ -18,7 +18,7 @@
         "network",
         "power-profiles-daemon",
         "battery",
-        "tray",
+        // "tray",
         "custom/power"
     ],
 
