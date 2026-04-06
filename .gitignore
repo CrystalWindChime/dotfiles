@@ -1,0 +1,8 @@
+*.swp
+*.swo
+*~
+.DS_Store
+
+**/.cache/
+**/__pycache__/
+**/*.log

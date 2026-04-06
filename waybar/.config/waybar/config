@@ -118,9 +118,9 @@
     },
 
     "custom/wlsunset": {
-        "exec": "/home/kit/bin/wlsunset-status.sh",
+        "exec": "/home/kit/.local/bin/wlsunset-status.sh",
         "tooltip": false,
         "interval": 3,
-        "on-click": "/home/kit/bin/toggle-wlsunset.sh"
+        "on-click": "/home/kit/.local/bin/toggle-wlsunset.sh"
     }
 }

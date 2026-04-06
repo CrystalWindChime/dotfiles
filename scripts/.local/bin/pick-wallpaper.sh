@@ -3,7 +3,7 @@
 set -euo pipefail
 
 WALLPAPER_DIR="$HOME/pictures/wallpapers"
-PREVIEW_SCRIPT="$HOME/bin/rofi-preview.sh"
+PREVIEW_SCRIPT="$HOME/.local/bin/rofi-preview.sh"
 
 if [[ ! -d "$WALLPAPER_DIR" ]]; then
   printf 'Wallpaper directory not found: %s\n' "$WALLPAPER_DIR" >&2
