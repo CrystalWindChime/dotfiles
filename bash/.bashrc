@@ -6,7 +6,6 @@
 
 PS1='[\u@\h \W]\$ '
 
-# Login banner for TTY
 if [[ -z $DISPLAY && -z $WAYLAND_DISPLAY ]]; then
   echo
   echo "================================"
