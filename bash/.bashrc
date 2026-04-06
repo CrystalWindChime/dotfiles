@@ -9,6 +9,19 @@
 # alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# Login banner for TTY
+if [[ -z $DISPLAY && -z $WAYLAND_DISPLAY ]]; then
+  echo
+  echo "================================"
+  echo "  GUI Options:"
+  echo "    hypr -> Hyprland (Wayland)"
+  echo "    xfce -> XFCE (X11)"
+  echo "================================"
+fi
+
+alias hypr="exec start-hyprland"
+alias xfce="exec startx"
+
 alias hyprconf="nvim ~/.config/hypr/hyprland.conf"
 alias rldwaybar="pkill waybar && hyprctl dispatch exec waybar"
 alias movemonitor="hyprctl dispatch moveworkspacetomonitor"

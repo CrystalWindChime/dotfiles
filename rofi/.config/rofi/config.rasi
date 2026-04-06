@@ -12,6 +12,5 @@ configuration {
       sorting-method:    "name";
   }
 }
-//@theme 'minimal-dark'
 
-@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "~/.config/rofi/style.rasi"

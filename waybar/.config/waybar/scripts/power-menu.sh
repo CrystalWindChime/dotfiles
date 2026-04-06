@@ -1,9 +1,15 @@
 #!/bin/bash
 
-CHOICE=$(printf "Lock\nReboot\nShutdown" | rofi -dmenu -i -p "Power")
+CHOICE=$(printf "%s\n" \
+  "  Lock" \
+  "  Log Out" \
+  "  Reboot" \
+  "  Shutdown" |
+  rofi -dmenu -i -p "Power")
 
 case "$CHOICE" in
-Lock) loginctl lock-session ;; # or your lockscreen command
-Reboot) systemctl reboot ;;
-Shutdown) systemctl poweroff ;;
+*Lock) loginctl lock-session ;;
+*"Log Out") hyprctl dispatch exit ;;
+*Reboot) systemctl reboot ;;
+*Shutdown) systemctl poweroff ;;
 esac

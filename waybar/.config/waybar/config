@@ -23,19 +23,16 @@
     ],
 
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{name}: {icon}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-        }
+      "disable-scroll": true,
+      "all-outputs": true,
+      "warp-on-scroll": false,
+
+      "format": "{name}",
+
+      // "persistent-workspaces": { "*": 10 }
     },
 
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },

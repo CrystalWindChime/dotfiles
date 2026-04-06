@@ -2,7 +2,7 @@
     font-family: "Inter", "Font Awesome 7 Free Solid";
     font-size: 12px;
     font-weight: 500;
-    color: #e6e6e6;
+    color: rgba(255,255,255,0.65);
     border: none;
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ window#waybar {
 /* ===========
    Module Containers
    =========== */
-#workspaces button,
 #backlight,
 #pulseaudio,
 #network,
@@ -24,7 +23,7 @@ window#waybar {
 #tray {
   border-radius: 6px;
   padding: 0px 10px;
-  margin: 3px 4px;
+  margin: 3px 1px;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -43,13 +42,13 @@ window#waybar {
 #battery:hover,
 #clock:hover {
   background: rgba(255, 255, 255, 0.10);
-  color: #3ba8ff;
+  color: rgba(255,255,255,0.85);
 }
 
 #custom-wlsunset:hover,
 #custom-power:hover,
 #power-profiles-daemon:hover {
-  color: #3ba8ff;
+  color: rgba(255,255,255,0.85);
 }
 
 /* ===========
@@ -58,17 +57,36 @@ window#waybar {
 #workspaces {
   margin-left: 8px;
 }
+
 #workspaces button {
-  color: #a9a9a9;
-  padding: 0px 8px;
+  all: unset;
+
+  min-width: 15px;
+  padding: 1px;
+  margin: 10px 2px;
+
+  /*border: 1px solid rgba(255,255,255,0.65);*/
+  border-radius: 999px;
+
+  transition:
+    /*background-color 150ms ease,
+    color 150ms ease,*/
+    padding 300ms ease;
 }
+
 #workspaces button.active {
-  background: rgba(59, 168, 255, 0.15);
-  color: #3ba8ff;
-  border-radius: 6px;
+  padding: 0 12px;
+
+  color: rgba(0,0,0,0.85);
+  background-color: rgba(255,255,255,0.85);
+
+  border: none;
+  border-radius: 999px;
 }
+
 #workspaces button.urgent {
-  color: #ff6565;
+  color: rgba(255,0,0,1);
+  border: 1px solid #ff0000;
 }
 
 /* ===========
