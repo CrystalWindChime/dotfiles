@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTION="$1"  # "left" or "right"
+DIRECTION="$1" # "left" or "right"
 
 # Get all monitor names in order
 MONITORS=($(hyprctl monitors -j | jq -r '.[].name'))
@@ -18,9 +18,9 @@ done
 
 # Determine new monitor index
 if [[ "$DIRECTION" == "right" ]]; then
-  TARGET_INDEX=$(( (CURRENT_INDEX + 1) % ${#MONITORS[@]} ))
+  TARGET_INDEX=$(((CURRENT_INDEX - 1) % ${#MONITORS[@]}))
 else
-  TARGET_INDEX=$(( (CURRENT_INDEX - 1 + ${#MONITORS[@]}) % ${#MONITORS[@]} ))
+  TARGET_INDEX=$(((CURRENT_INDEX + 1 + ${#MONITORS[@]}) % ${#MONITORS[@]}))
 fi
 
 TARGET_MONITOR="${MONITORS[$TARGET_INDEX]}"
